@@ -15,6 +15,11 @@ npm install
 npm install vue-resource vue-socket.io vuelidate vuelidate-error-extractor vuex-persist
 ```
 
+## Add Vuetify in new Project
+```sh
+npx @vue/cli add vuetify
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
