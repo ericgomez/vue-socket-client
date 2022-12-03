@@ -1,14 +1,24 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Login from "../views/Auth/Login";
 
 Vue.use(VueRouter);
 
 const routes = [
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  // }
+  {
+    path: '/',
+    redirect: '/login'
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import(/* webpackChunkName: "register" */ '../views/Auth/Register')
+  },
 ];
 
 const router = new VueRouter({
