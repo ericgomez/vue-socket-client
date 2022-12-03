@@ -42,6 +42,11 @@ const routes = [
         name: 'Room',
         component: () => import(/* webpackChunkName: "room" */ '../views/Room')
       },
+      {
+        path: '/room/:id/private',
+        name: 'PrivateRoom',
+        component: () => import(/* webpackChunkName: "room-private" */ '../views/PrivateRoom')
+      }
     ]
   },
 ];
