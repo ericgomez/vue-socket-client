@@ -28,6 +28,8 @@ const routes = [
       // Checked if exist socket
       if (!Vue.prototype.$socket) {
         require("../plugins/socket-io");
+      } else {
+        Vue.prototype.$socket.io.opts.query = `token=${store.state.auth.token}`;
       }
       next();
     },
