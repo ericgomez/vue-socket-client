@@ -10,7 +10,7 @@
       <v-btn right text @click="exit">Salir</v-btn>
     </v-app-bar>
 
-    <v-content class="blue-grey darken-4">
+    <v-main class="blue-grey darken-4">
 
       <snack-bar />
     
@@ -23,7 +23,7 @@
         />
     
       </div>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
